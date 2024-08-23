@@ -11,7 +11,6 @@ const ForeCast = ({ title, data }) => {
       day: "2-digit",
       month: "long",
     }).format(date);
-    console.log(formattedDate);
     return formattedDate;
   }
 
