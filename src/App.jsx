@@ -22,10 +22,10 @@ const App = () => {
   }, [query, units]);
 
   const formatBackground = () => {
-    if (!weather) return "from-cyan-600 to-blue-700";
+    if (!weather) return "from-blue-600 to-blue-900";
     const threshold = units === "metric" ? 20 : 60;
-    if (weather.temp <= threshold) return "from-cyan-600 to-blue-700";
-    return "from-yellow-600 to-orange-700";
+    if (weather.temp <= threshold) return "from-blue-600 to-blue-900";
+    return "from-red-600 to-orange-600";
   };
 
   return (
